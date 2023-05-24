@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback de clientes</title>
+</head>
+<body>
+    <h1>Por favor, forneça seu feedback!</h1>
+    <form action="enviar_feedback.php" method="post">
+    <label>Nome do usuário:</label><br>
+    <input type="text" name="nome_usuario" required=""><br>
+    <label>Data:</label><br>
+    <input type="date" name="data" required=""><br>
+        <label>Avaliação:</label><br>
+    <input type="number" name="avaliacao" min="1" max="5" required=""><br>
+    <input type="submit" value="Enviar">
+    </form>
+    <h2>Feedback de usuários anteriores</h2>
+
+
+
+
+    <br>
+    <table border="2">
+        <thead>
+            <tr>
+                <th>Nome de usuário</th>
+                <th>Data</th><th>Avaliação</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>joaosilva</td>
+                <td>22/05/2021</td>
+                <td>4.5</td>
+            </tr>
+            <tr>
+                <td>marialima</td>
+                <td>08/06/2021</td>
+                <td>3.0</td>
+            </tr>
+            <tr>
+                <td>paulosouza</td>
+                <td>15/07/2021</td>
+                <td>5.0</td></tr>
+            </tbody>
+        </table>
+
+    
+</body>
+</html>
